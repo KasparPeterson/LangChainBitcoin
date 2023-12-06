@@ -3,7 +3,7 @@ from langchain.tools import BaseTool, tool
 
 from protos import lightning_pb2 as ln
 
-from lightning import LndNode
+from lightning_custom import LndNode
 
 from typing import List
 

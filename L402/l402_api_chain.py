@@ -10,7 +10,7 @@ from langchain.chains.llm import LLMChain
 from .requests_l402 import RequestsL402Wrapper
 from .requests_l402 import ResponseTextWrapper
 
-from lightning import LightningNode
+from lightning_custom import LightningNode
 
 class L402APIChain(APIChain):
     requests_wrapper: Any
