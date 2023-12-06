@@ -44,7 +44,7 @@ lnd_node = LndNode(
     # host='172.23.0.3',
     host='127.0.0.1',
     # port=8080,
-    port=8081,
+    port=10009,
 )
 
 print("get_info:", lnd_node.get_info())

@@ -9,7 +9,7 @@ lnd_node = LndNode(
     # host='172.23.0.3',
     host='127.0.0.1',
     # port=8080,
-    port=8081,
+    port=10009,
 )
 
 lnd_tools = LndTools.from_lnd_node(lnd_node=lnd_node)
