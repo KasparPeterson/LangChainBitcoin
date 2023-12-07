@@ -111,3 +111,5 @@ webencodings==0.5.1
 websocket-client==1.6.0
 yarl==1.9.2
 pylightning
+uvicorn
+fastapi
