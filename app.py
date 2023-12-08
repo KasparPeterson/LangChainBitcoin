@@ -92,3 +92,10 @@ def root():
 )
 def v1():
     return {"hello": "world v1"}
+
+
+@app.get(
+    "/v1/models",
+)
+def v1():
+    return {"hello": "world v1"}

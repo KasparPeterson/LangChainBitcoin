@@ -48,6 +48,8 @@ class RequestsL402Wrapper(object):
 
             response = requests_func(*args, **kwargs)
 
+            print("\nresponse:", response, "\n")
+
             if response.status_code != L402_ERROR_CODE:
                 return response
 

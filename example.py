@@ -5,7 +5,7 @@ from L402 import L402APIChain
 
 from langchain.llms import OpenAI
 
-API_DOCS = '''BASE URL: https://localhost:8081
+API_DOCS = '''BASE URL: http://localhost:8081
 
 API Documentation
 The API endpoint /v1/models HTTP endpoint can be used to fetch the set of supported models. The response is text, the list of models separated by a comma
@@ -36,7 +36,7 @@ A JSON object of the set of supported models, which looks similar to:
 }
 '''
 
-url = 'https://localhost:8081/v1'
+url = 'http://localhost:8081/v1'
 
 lnd_node = LndNode(
     cert_path='.lnd/tls.cert',
@@ -44,7 +44,9 @@ lnd_node = LndNode(
     # host='172.23.0.3',
     host='127.0.0.1',
     # port=8080,
-    port=10009,
+    # 10009 is LND node for Aperture
+    # 10010 is LND node for client
+    port=10010,
 )
 
 print("get_info:", lnd_node.get_info())
